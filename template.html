@@ -169,12 +169,35 @@
     </style>
 
     <script>
+         var  myFirstVariable = 1;
+        var mySecondVariable = 2;
+        var myThirdVariable = 3;
 
+    Function myFirstFunction()  {
+      myFirstVariable = myFirstVariable + 12
+      mySecondVariable = mySecondVariable + 6
+      myThirdVariable = myThirdVariable + 9
+    }
+
+        function countClick() {
+
+numClicks++;
+
+document.getElementById('theButton');
+
+}
+function showCount() {
+
+document.getElementById("thing2").innerHTML = "You have clicked " + numClicks + " times!";
+
+}
         
     </script>
 </head>
 
 <body>
+    <button onclick = "myFirstFunction();">  The Text On the Button   </button>
+</body>
     <div class="title">
          TRIPLE NUMBER TRACKER
 
