@@ -1,0 +1,255 @@
+<html>
+
+<head>
+
+<style>
+
+body {
+
+background-color: #42F6FF;
+
+color: navy;
+
+display: grid;
+
+grid-template-columns: 1fr 1fr 1fr;
+
+grid-template-rows: 200px 1fr 1fr 50px;
+
+gap: 10px;
+
+}
+
+
+.top {
+
+grid-column-start: 1;
+
+grid-column-end: 4;
+
+grid-row-start: 1;
+
+grid-row-end: 2;
+
+background-color: navy;
+
+color: lime;
+
+}
+
+.image1 {
+
+grid-column-start: 1;
+
+grid-column-end: 2;
+
+grid-row-start: 2;
+
+grid-row-end: 3;
+
+}
+
+.image2 {
+
+grid-column-start: 1;
+
+grid-column-end: 2;
+
+grid-row-start: 3;
+
+grid-row-end: 4;
+
+}
+
+.text {
+
+grid-column-start: 2;
+
+grid-column-end: 4;
+
+grid-row-start: 2;
+
+grid-row-end: 4;
+
+}
+
+.footer {
+
+grid-column-start: 1;
+
+grid-column-end: 4;
+
+grid-row-start: 4;
+
+grid-row-end: 5;
+
+}
+
+p {
+
+color: lime;
+
+border: 2px solid red;
+
+width: 70%;
+
+background-color: navy;
+
+text-align: center;
+
+margin: 4;
+
+font-size: 20px;
+
+}
+
+ul {
+
+font-size: 30px;
+
+color: red;
+
+}
+
+h1 {
+
+font-size: 80px;
+
+}
+
+button {
+
+font-size: 50px;
+
+}
+
+img {
+
+border: 4px navy groove;
+
+}
+
+</style>
+
+
+  <script>
+        var  myFirstVariable = 1;
+        var mySecondVariable = 2;
+        var myThirdVariable = 3;
+
+    Function myFirstFunction()  {
+      myFirstVariable = myFirstVariable + 12
+      mySecondVariable = mySecondVariable + 6
+      myThirdVariable = myThirdVariable + 9
+    }
+     </script>
+
+function webpageChanger() {
+
+document.getElementById("thing2").innerHTML = "This item has been redacted.";
+
+document.getElementById("thing3").innerHTML = "This item has also been redacted.";
+
+document.getElementById("thing1").src = "reallyhot.jpg";
+
+document.getElementById("thing3").style = "color: #000000;";
+
+document.getElementById("thing2").innerHTML = "<img src='reallyhot.jpg'>";
+
+}
+
+function countClick() {
+
+numClicks++;
+
+document.getElementById('theButton').disabled=false;
+
+}
+
+function showCount() {
+
+document.getElementById("thing2").innerHTML = "You have clicked " + numClicks + " times!";
+
+}
+
+</script>
+
+<title>My Hello World Website</title>
+
+<meta http-equiv='cache-control' content='no-cache'>
+
+<meta http-equiv='expires' content='0'>
+
+<meta http-equiv='pragma' content='no-cache'>
+
+</head>
+
+  <body>
+
+<div class="top">
+
+<center><h1 onclick="countClick();">This is a Really Big Header</h1></center>
+
+</div>
+
+<div class="image1">
+
+<center><img src="638x472.jpeg" width="90%" height="90%" alt="The Falcon Report Logo" onclick="this.style='border-color: yellow;';"></center>
+
+</div>
+
+<div class="image2">
+
+<center><img id="thing1" src="638x472.jpeg" width="90%" height="90%" alt="The Falcon Report Logo" onclick="this.src='reallyhot.jpg';"></center>
+
+</div>
+
+<div class="text">
+
+<button id="theButton" disabled="true" onclick="webpageChanger();">CLICK ON ME!</button>
+
+<button id="countButton" onclick="showCount();">Tell the Count!</button>
+
+<a href="www.vschsd.org">Click here</a> to visit the Valley Stream Central High School District website.
+
+<marquee>Look at this text over here as well! It is important text that we don't want to get removed from our view. I promise!</marquee>
+
+<h2>This is a Big Header</h2>
+
+<h3>This is a Header</h3>
+
+<p>This is a paragraph. <strike>This sentence is not a good one. </strike>The text in this paragraph will stick together and tell a coherent message. When I am done with the paragraph I will close the paragraph tag and move onward with making someting new.</p>
+
+<b><i>
+
+Hello, World! <br>
+
+This is a test!
+
+</i></b>
+
+<h3>These are the things that are good about this website:</h3>
+
+<ul>
+
+<li>It is really simple</li>
+
+<li id="thing2">It did not take long to code</li>
+
+<li id="thing3">At least some of the things are speld right</li>
+
+</ul>
+
+<p>This is another paragraph! It should look just like the first paragraph.</p>
+
+</div>
+
+<div class="footer">
+
+This is the bottom of the website. Here I put all the legal disclaimers and other minute details that I must have but I don't want people to focus on. If you are still reading this, you are wasting time but that's ok! I won't tell anyone!
+
+</div>
+
+</body>
+
+</html>
